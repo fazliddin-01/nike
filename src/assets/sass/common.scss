@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background: unset;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+@mixin media($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+  
